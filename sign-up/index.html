@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- FONT-GOOGLE -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;900&display=swap" rel="stylesheet">
+    <!-- CSS Global -->
+    <link rel="stylesheet" href="style.css">
+    <title>formulaire</title>
+</head>
+<body>
+    <section class="sign-up">
+        <form id="form-user-add"  class="create-user">
+            <h2>Nouvel utilisateur</h2>
+            <!-- <h1>Nouvel utilisateur</h1> -->
+            <label for="firstname">Prénom </label><br>
+            <div  class="firstnameWraper">
+                <input type="text"  class=".input" name="firstname" id="firstname" placeholder="Nom de l'utilisateur"><br>
+            </div>
+            <label for="lastname">Nom</label><br>
+            <div class="lastnameWraper">
+                <input type="text" class=".input" name="lastname" id="lastname" placeholder="Prénom de l'utilisateur"><br>
+            </div>
+            <label for="email">Adresse email</label><br>
+            <div class="emailWraper">
+                <input type="email" class=".input" name="email" id="email" placeholder="Adresse email de l'utilisateur"><br>
+            </div>
+            <label for="biographie">Biographie</label><br>
+            <div class="bioWraper">
+                <textarea name="biographie" id="biographie" placeholder="Biographie de l'utilisateur" cols="30" rows="10"></textarea><br>
+            </div>
+            <div class="middle">
+                <label for="birthday">Date de naissance</label><br>
+                <div class="birthWraper">
+                    <input type="date" name="birthday" id="birthday"><br>
+                </div>
+                <label for="sex">Sexe</label><br>
+                <div class="sexWraper">
+                    <select name="sex" id="sex"><br>
+                        <option value="none" selected disabled hidden>Are you?</option>
+                        <option value="man">Man</option>
+                        <option value="woman">Woman</option>
+                    </select><br>
+                </div>
+            </div>
+            <div class="middle"></div>
+            <div class="btn-space">
+                <input type="button" value="Annulé" class="form-btn">
+                <input type="submit" value="Sauvegarder" class="form-btn">
+                
+            </div>
+        </form>
+
+    </section>
+    <section class="userSection">
+        <table id="tableau">
+            <thead>
+                <tr>
+                    <th>First name</th>
+                    <th>Last name</th>
+                    <th>email</th>
+                </tr>
+            </thead>
+            <tbody id="tableBody">
+            
+            </tbody>
+
+        </table>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>
